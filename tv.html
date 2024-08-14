@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+        body {
+    background-color: white; /* Change the color to your preference */
+
+
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 50px;
+            border-radius: 50px;
+            width: 1250px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        h3 {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .product {
+            text-align: left;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        .product img {
+            max-width: 500px;
+            max-height: 500px;
+        }
+
+        .description {
+            display: none;
+        }
+    </style>
+    <script>
+        function toggleDescription(productId) {
+            var description = document.getElementById(productId);
+            if (description.style.display === "block") {
+                description.style.display = "none";
+            } else {
+                description.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+<div align="center">
+    <fieldset>
+        <h1> Tv</h1>
+
+        <div class="product" onclick="toggleDescription('product1-description')">
+            <img src="https://m.media-amazon.com/images/I/71Twf7HYguL._AC_CR0%2C0%2C0%2C0_SX480_SY360_.jpg" alt="Product 1">
+            <img src="https://m.media-amazon.com/images/I/91iOFkJwLTL._AC_CR0%2C0%2C0%2C0_SX480_SY360_.jpg">
+            <h2>price:-23,499</h2>
+            <h2>Hisense 108 cm (43 inches) 4K Ultra HD QLED Google TV 43U6K (Gray) | with 3 Years Warranty</h2>
+            <div id="product1-description" class="description">
+                <p>Resolution : 4K Ultra HD (3840x2160) | Refresh Rate : 60 Hertz / HRR Mode 120 Hz | Light Sensing | ALLM VRR Supported
+Connectivity: 3 HDMI ports to connect set-top box, Blu Ray players, gaming console (HDMI 1 eARC supported) | 2 USB 2.0 port to connect hard drives and other USB devices | Dual-band Wi-Fi | Bluetooth 5
+Sound : Powerful 24 Watts Output speakers | Dolby Atmos for remarkable sound quality
+Smart TV features: Auto Low Latency Mode for VRR | Light Sensing | Quad-core processor | Dual-band Wi-Fi |2GB RAM + 16GB Storage Apps: Netflix, Youtube, Prime Video etc.
+Display : 60 Hertz / HRR Mode 120 Hz Panel | Bezel-less Floating Display Design| VRR& ALLM | Dolby Vision , HDR10, HLG | 1 Billion Colours | MEMC
+Warranty Information: 3 Year Comprehensive Warranty on product provided by Hisense from date of purchase.</p>
+            </div>
+        </div>
+
+        <div class="product" onclick="toggleDescription('product2-description')">
+            <img src="https://m.media-amazon.com/images/I/71RxCmvnrbL._AC_CR0%2C0%2C0%2C0_SX480_SY360_.jpg">
+            <img src="https://m.media-amazon.com/images/I/616vdmuZhvL._AC_CR0%2C0%2C0%2C0_SX480_SY360_.jpg">
+            <h2>price:-23000</h2>
+            <h2>43% offGreat Indian Festival
+Samsung 80 cm (32 Inches) Wondertainment Series HD Ready LED Smart TV UA32T4340BKXXL (Glossy Black)</h2>
+            <div id="product2-description" class="description">
+                <p>Resolution: HD Ready (1366x768) | Refresh Rate: 60 hertz
+Connectivity: 2 HDMI ports to connect set top box, Blu Ray players, gaming console | 1 USB ports to connect hard drives and other USB devices
+Sound : 20 Watts Output | Dolby Digital Plus
+Smart TV Features : Personal Computer | Screen Share | Music System | Content Guide | Connect Share Movie
+Display : LED Panel | Mega Contrast | PurColor | HD Picture Quality | Slim & Stylish Design
+Warranty Information: 1 year comprehensive warranty plus additional 1 years on panel by brand from date of invoicem</p>
+            </div>
+        </div>
+
+        <div class="product" onclick="toggleDescription('product3-description')">
+            <img src="https://m.media-amazon.com/images/I/81qx8YtutXL._AC_CR0%2C0%2C0%2C0_SX480_SY360_.jpg" alt="Product 3">
+            <img src="https://m.media-amazon.com/images/I/71h7aN+GhFL._AC_CR0%2C0%2C0%2C0_SX480_SY360_.jpg">
+            <h2>price:-35000
+            <h2>Sony Bravia 139 cm (55 inches) 4K Ultra HD Smart LED Google TV KD-55X74K (Black)</h2>
+            <div id="product3-description" class="description">
+                <p>About this item
+Resolution: 4K Ultra HD (3840 x 2160) | Refresh Rate: 60 Hertz | 178 Degree wide viewing angle
+Connectivity: 3 HDMI ports to connect set top box, Blu Ray players, gaming console | 2 USB ports to connect hard drives and other USB devices
+Sound : 20 Watts Output | Open Baffle Speaker| Dolby Audio | Clear Phase
+Smart TV Features: Google TV | Watchlist | Voice Search | Google Play | Chromecast | Netflix | Amazon Prime Video | Additional Features: Apple Airplay | Apple Homekit |Alexa
+Display: X1 4K Processor | 4K HDR | Live Colour| 4K X Reality Pro | Motion Flow XR100
+Warranty Information: 3.</p>
+            </div>
+        </div>
+    </fieldset>
+</div>
+</body>
+</html>

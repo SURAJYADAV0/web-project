@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>sign up page</title>
+	 <link rel="stylesheet" href="{{url_for('static', filename='../static/page2.css')}}">
+</head>
+<body>
+<div align="center">
+	<fieldset>
+		<h2>  Create Account</h2>
+		<form action="insertrec" method="POST">
+			<table>
+				<tr>
+					<td>Id:</td>
+					<td><input type="text"name='id'></td>
+				</tr>
+				
+				<tr>
+					<td>UserNAme:</td>
+					<td><input type="text"name='uname'></td>
+				</tr>
+				<tr>
+					<td>Email id :</td>
+					<td><input type="text" name="email"></td>
+
+				</tr>
+				<tr>
+					<td> Address:</td>
+					<td><input type="text" name="address"></td>
+
+				</tr>
+				
+
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" name="pin"></td>
+					
+				</tr>
+
+				<tr><td>
+
+					<input type="reset" name="Reset">
+					<input type="submit" name="Submit"><br><br>	
+
+				    </td>
+				</tr>
+
+
+
+
+
+			</table>
+			<h3>Already have an account...!  <a href="/"> Login in </a></h3>
+
+
+	</form>	
+
+
+	</fieldset>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #8F63ED;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.product {
+    background-color: #B299EA ;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.product img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.product h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+.product p {
+    color: black;
+}
+
+.cart {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart:hover {
+    background-color: #0056b3;
+}
+
+.checkout-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+    <script>
+        function toggleDescription(productId) {
+            var description = document.getElementById(productId);
+            if (description.style.display === "block") {
+                description.style.display = "none";
+            } else {
+                description.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+<div align="center">
+    <fieldset>
+         <h1>Smartphones</h1>
+
+        <div class="product" onclick="toggleDescription('product1-description')">
+            <img src="https://m.media-amazon.com/images/I/71J8tz0UeJL._SL1500_.jpg" alt="Product 1">
+            <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1708671422/Croma%20Assets/Communication/Mobiles/Images/248910_1_binkjc.png?tr=w-360" alt="Product 1">
+            <h2>Samsung Galaxy S22 Ultra 5G (Burgundy, 12GB, 256GB Storage)</h2>
+            <p>Price: ₹99,999</p>
+            <div id="product1-description" class="description">
+               <p><strong>About this item</strong></p>
+               <ul>
+                <li>The first Galaxy S with embedded S Pen</li>
+                <li>Write comfortably like pen on paper</li>
+                <li>turn quick notes into legible text and use Air Actions to control your phone remotely</li>
+                <li>Improved latency in Samsung Notes makes every pen stroke feel as natural as ink on paper — and you can convert those hastily written ideas into legible text</li>
+               </ul>
+                <button class="cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product" onclick="toggleDescription('product2-description')">
+            <img src="https://m.media-amazon.com/images/I/511SqWlN9QL._SX679_.jpg" alt="Product 2">
+            <img src="https://m.media-amazon.com/images/I/51QVJveu+-L._SX679_.jpg" alt="Product 2">
+            <h2>OnePlus 11 5G (Titan Black, 16GB RAM, 256GB Storage)</h2>
+            <p>Price: ₹79,999</p>
+            <div id="product2-description" class="description">
+                <p><strong>About this item:-</strong></p>
+                <ul>
+                    <li>Brand:-OnePlus</li>
+                    <li>Camera: 50MP Main Camera with Sony IMX890 (OIS supported)</li>
+                    <li>48MP Ultrawide Camera with Sony IMX581 (FOV: 115 degree) and 32MP Telephoto lens with Sony IMX709 (2X Optical Zoom); 16MP Front (Selfie) Camera with EIS support</li>
+                </ul>
+                <button class="cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product" onclick="toggleDescription('product3-description')">
+            <img src="https://m.media-amazon.com/images/I/81bh6SxXQ+L._SL1500_.jpg" alt="Product 3">
+            <img src="https://www.daimagestore.com/wp-content/uploads/2024/07/Xiaomi-Redmi-A2-Plus-64-GB-Mobile-Phone-493837927-i-1-1200Wx1200HWx1200H.jpg" alt="Product 3">
+            <h2>Redmi A2 (Sea Green, 2GB RAM, 64GB Storage)</h2>
+            <p>Price: ₹9,999</p>
+            <div id="product3-description" class="description" style="display:none;">
+                <p><strong>About this item:</strong></p>
+                <ul>
+                    <li>Brand: Redmi</li>
+                    <li>High performance MediaTek Helio G36, up to 2.2GHz</li>
+                    <li>Up to 4GB RAM including 2GB Virtual RAM | 64GB Storage</li>
+                </ul>
+                <button class="cart">Add to Cart</button>
+            </div>
+        </div>
+        
+
+        <div class="product" onclick="toggleDescription('product4-description')">
+            <img src="https://m.media-amazon.com/images/I/71GLMJ7TQiL._SL1500_.jpg" alt="product 4">
+            <img src="https://m.media-amazon.com/images/I/61BvZ6EbUvL._SX679_.jpg" alt="product 4">
+            <h2>Apple iPhone 13 (128GB) - Starlight</h2>
+            <p>Price: ₹49,500</p>
+            <div id="product4-description" class="description" style="display:none;">
+                <p><strong>About this item:</strong></p>
+                <ul>
+                    <li>Brand: Apple</li>
+                    <li>Operating System: iOS 14</li>
+                    <li>Memory Storage Capacity: 128 GB</li>
+                    <li>Screen Size: 6.1 Inches</li>
+                    <li>Resolution: 4K</li>
+                    <li>15 cm (6.1-inch) Super Retina XDR display</li>
+                    <li>Cinematic mode adds shallow depth of field and shifts focus automatically in your videos</li>
+                    <li>Advanced dual-camera system with 12MP Wide and Ultra Wide cameras; Photographic Styles, Smart HDR 4, Night mode, 4K Dolby Vision HDR recording</li>
+                    <li>12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording</li>
+                    <li>A15 Bionic chip for lightning-fast performance</li>
+                </ul>
+                <button class="cart">Add to Cart</button>
+            </div>
+        </div>
+        
+        <div class="product" onclick="toggleDescription('product5-description')">
+            <img src="https://m.media-amazon.com/images/I/619lW2YtVhL._SX569_.jpg" alt="product 4">
+            <img src="https://m.media-amazon.com/images/I/61UqQ+zXz7L._SX569_.jpg" alt="product 4">
+            <h2>iQOO 12 5G (Legend, 12GB RAM, 256GB Storage)</h2>
+            <p>Price:- ₹52,998</p>
+            <div id="product5-description" class="description" style="display:none;">
+                <p><strong>About this item:</strong></p>
+                <ul>
+                    <li>3.3 GHz Snapdragon 8 Gen 3 mobile platform, which is on 4nm TSMC Process</li>
+                    <li>Enhanced graphic performance with Adreno 750</li>
+                    <li>In addition to that, it has LPDRR5X RAM & UFS 4.0 storage.</li>
+                    <li>50MP 1/1.3" Astrography Camera (f/1.68) + 50MP Ultra - Wide Angle Camera (f/1.20) + 64MP 3X Periscope Telephoto Camera (f/2.57) with 100X Digital zoom.</li>
+                    <li>Supercomputing chip Q1, Symmetrical dual stereo speaker, 4D Game vibration, Large X-axis linear motor enhances the overall gaming experience.</li>
+                </ul>
+                <button class="cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product" onclick="toggleDescription('product6-description')">
+            <img src="https://m.media-amazon.com/images/I/617D7U0bJ-L._SX679_.jpg" alt="product 6">
+            <img src="https://m.media-amazon.com/images/I/61OYH9vPuDL._SX679_.jpg" alt="product 6">
+            <h2>Motorola razr 40 Ultra (Infinite Black, 8GB RAM, 256GB Storage) | 3.6" External AMOLED Display | 6.9" AMOLED 165Hz Display | 32MP Selfie Camera | 30W TurboPower Charging | Android 13</h2>
+            <p>Price: ₹46,749</p>
+            <div id="product6-description" class="description" style="display:none;">
+                <p><strong>About this item:</strong></p>
+                <ul>
+                    <li>Snapdragon 8+ Gen 1 Mobile Platform, 8GB LPDDR5 RAM, 256GB built-in UFS 3.1 Storage</li>
+                    <li>Main display: 6.9" FHD+ pOLED display; External display: 3.6" pOLED display</li>
+                    <li>Display Resolution - Main display: FHD+ (2640 x 1080) | 413ppi; External display: 1066 x 1056 | 413ppi</li>
+                    <li>Main Camera - 12MP (f/1.5, 1.4μm) | OIS; Rear Camera - 13MP (f/2.2, 1.12μm) | Ultra-wide + macro | FOV 108°, Single LED flash</li>
+                    <li>Corning Gorilla Glass Victus on both front and rear; IP52 Water-repellent design; Battery - 3800mAh non-removable; 30W TurboPower charging support; 5W wireless charging support (charger sold separately)</li>
+                </ul>
+                <button class="cart">Add to Cart</button>
+            </div>
+        </div>
+        
+
+        <button class="checkout-button">Checkout</button>
+    </fieldset>
+</div>
+</body>
+</html>

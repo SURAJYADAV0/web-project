@@ -1,0 +1,28 @@
+body{
+	background-image: url("https://i.pinimg.com/564x/92/11/fc/9211fc108662d70d36a0e945b152b004.jpg");
+	color: white;
+}
+
+div{
+	background:gray;
+	border-color:yellow;
+	border-style:solid;
+	border-width:2px;
+}
+/* Change the text color to black for specific elements */
+ label {
+    color: #000;
+}
+/* Change the text color to black for specific elements */
+h2, label {
+    color: #000;
+}
+/* Change the text color to black for the "Username" label */
+td[for="uname"] {
+    color: #000;
+}
+/* Change the text color to black for the "Id" and "Username" input fields */
+input[name="id"],
+input[name="uname"] {
+    color: black;
+}

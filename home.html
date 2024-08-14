@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        body {
+            background-image: url('https://i.pinimg.com/564x/c6/08/29/c60829740cf264e9fe9870063aa1271a.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0; /* Remove default margin */
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        .menu {
+            margin: 20px 0;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            margin: 10px;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        /* Enhanced dropdown menu styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width:160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Product showcase styles */
+        .product {
+            background-color: #fff;
+            border: 2px solid #ddd;
+            margin: 50px;
+            padding: 40px;
+            border-radius: 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        /* Additional styles can be added as needed */
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>HOME</h1>
+    
+    <div class="menu">
+        
+        <a href="/">Login</a>
+        <a href="/registration">Sign Up</a>
+        <a href="/user">Admin List</a>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Products</button>
+        <div class="dropdown-content">
+            <a href="/mobiles">Smartphones</a>
+            <a href="/laptops">Laptops</a>
+            <a href="/Clothing">Clothing</a>
+            <a href="/tv">TV</a>
+        </div>
+    </div>
+
+   
+
+<!-- JavaScript for the dropdown and product descriptions -->
+<script>
+function toggleDropdown() {
+    var dropdown = document.querySelector(".dropdown-content");
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+}
+
+function toggleDescription(descriptionId) {
+    var description = document.getElementById(descriptionId);
+    if (description.style.display === "block") {
+        description.style.display = "none";
+    } else {
+        description.style.display = "block";
+    }
+}
+</script>
+</body>
+</html>

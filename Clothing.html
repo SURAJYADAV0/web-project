@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+        body {
+    background-color: #676D62; /* Change the color to your preference */
+
+
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 50px;
+            border-radius: 50px;
+            width: 1250px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: black;
+
+        }
+        h2{
+            color: white;
+        }
+
+        h3 {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 10px;
+        }
+        div.product{
+            background-color: #A4A566;
+
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        p{
+            color: white;
+        }
+
+        .product {
+            text-align: left;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        .product img {
+            max-width: 250px;
+            max-height: 250px;
+        }
+
+        .description {
+            display: none;
+        }
+    </style>
+    <script>
+        function toggleDescription(productId) {
+            var description = document.getElementById(productId);
+            if (description.style.display === "block") {
+                description.style.display = "none";
+            } else {
+                description.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+<div align="center">
+    <fieldset>
+        <h1> Clothing</h1>
+
+        <div class="product" onclick="toggleDescription('product1-description')">
+            <img src="https://m.media-amazon.com/images/I/81An7B2mwpL._UX569_.jpg" alt="Product 1">
+            <img src="https://m.media-amazon.com/images/I/71B69n5ALAL._UX569_.jpg">
+            <h2>price:-999</h2>
+            <h2>Symbol Men's Festive Solid Long Kurta (Regular Fit)</h2>
+            <div id="product1-description" class="description">
+                <p>Care Instructions: Machine Wash
+Fit Type: Regular
+Material: 85% Rayon 15% Polyester
+Fashion Essential Knee Length Kurta for semi formal & casual occassion
+Band Collar with short button placket kurta
+Solid rayon/poly full sleeves kurta with contrast piping at button placket
+Rayon rich blend fabric is lightweight, smooth that feels soft on touch & similar in comfort to natural fibers like cotton and linen.
+</p>
+            </div>
+        </div>
+
+        <div class="product" onclick="toggleDescription('product2-description')">
+            <img src="https://m.media-amazon.com/images/I/9147eMMoLZL._UX569_.jpg" alt="Product 2">
+            <img src="https://m.media-amazon.com/images/I/91ad9F-QU+L._UL1500_.jpg">
+            <h2>price:-660</h2>
+            <h2>Symbol Men's Ajrakh Print Cotton Ethnic Shirth2</h2>
+            <div id="product2-description" class="description">
+                <p>About this item
+Care Instructions: Hand Wash and Wash Separately
+Fit Type: Regular Fit
+Material: 100% Cotton
+Regular Collar Full Sleeves Shirt with Ajrakh Print for all casual occasion
+This shirt is crafted out of traditional Ajrak Print also known as "Ajrakh". It is a unique form of block printing found mostly in kutch districts of India. Ajrak products are made with natural dyes which includes vegetable & mineral dyes. This method is known for its intricate geometric and floral patterns, as well as its vibrant color palette.
+Any irregularities or imperfections in the fabric or print detail are not flaws, as they are hand crafted products. Making these prints is time consuming and is hard work of various artists. It involves labour intensive method which causes certain variations which makes it authentic & unique.
+Handle with Love & Care: Natural colors & block prints tend to bleed. Hand Wash Seperatley in cold water. Use mild detergent. Do not rub/bleach/wring. Dry flat in shade, medium</p>
+            </div>
+        </div>
+
+        <div class="product" onclick="toggleDescription('product3-description')">
+            <img src="https://m.media-amazon.com/images/I/81LGjWo0BoL._UX569_.jpg" alt="Product 3">
+            <img src="https://m.media-amazon.com/images/I/815mWAZd1mL._UX569_.jpg">
+            <h2>price:-900
+            <h2>Symbol Men's Indigo Print Cotton Ethnic Shirt</h2>
+            <div id="product3-description" class="description">
+                <p>About this item
+Care Instructions: Hand Wash and Wash Separately
+Fit Type: Regular Fit
+Material: 100% Cotton
+Regular Collar Full Sleeves Shirt with Indigo Dyes for all casual occasion
+This Block Printed shirt is meticulously crafted using Indigo Dyes derived from the natural indigo plant leaves. The natual dye can be used in tie-n-dye, Shibori or block prints.
+Any irregularities or imperfections in the fabric or print detail are not flaws, as they are hand crafted products. Making these prints is time consuming and is hard work of various artists. It involves labour intensive method which causes certain variations which makes it authentic & unique.
+Handle with Love & Care: Natural colors & block prints tend to bleed. Hand Wash Seperatley in cold water. Use mild detergent. Do not rub/bleach/wring. Dry flat in shade, medium iron.</p>
+            </div>
+        </div>
+    </fieldset>
+</div>
+</body>
+</html>

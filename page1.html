@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Login Page1</title>
+	 <link rel="stylesheet" href="{{url_for('static', filename='../static/page1.css')}}">
+</head>
+<body>
+<div align="center">
+	<fieldset>
+		<h2> Login Page </h2>
+		<form action="validateuser" method="POST">
+			
+			UserName:<input type="text" name="uname"><br><br>
+			Password:<input type="password" name="pin"><br><br>
+			<input type="reset" name="Reset"><br><br>
+			<input type="submit" name="Login">
+			<h3> don't have an account :- <a href="/registration">Sign Up</a> </h3>
+
+		</form>
+
+  
+
+	</fieldset>
+
+</div>
+</body>
+</html>

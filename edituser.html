@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>update page</title>
+</head>
+<body>
+<div align="center">
+	<fieldset>
+		<h2>  <<< Updaterec >>></h2>
+		<form action="/updaterec" method="POST">
+			<table>
+				<tr>
+					<td>Id:</td>
+					<td><input type="text"name='id' value="{{data[0]}}"></td>
+				</tr>
+				
+				<tr>
+					<td>UserNAme:</td>
+					<td><input type="text"name='uname' value="{{data[1]}}"></td>
+				</tr>
+				<tr>
+					<td>Email id :</td>
+					<td><input type="text" name="email" value="{{data[2]}}"></td>
+
+				</tr>
+				<tr>
+					<td> Address:</td>
+					<td><input type="text" name="address" value="{{data[3]}}"></td>
+
+				</tr>
+				
+
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" name="pin" value="{{data[4]}}"></td>
+					
+				</tr>
+
+				<tr><td>
+
+					<input type="reset" name="Reset">
+					<input type="submit" name="update"><br><br>	
+
+				    </td>
+				</tr>
+
+
+
+
+
+			</table>
+	
+
+
+	</form>	
+
+
+	</fieldset>
+
+</div>
+</body>
+</html>

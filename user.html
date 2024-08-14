@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Page</title>
+</head>
+<body>
+    <div align="center">
+        <fieldset>
+            <h2><<<[user list]>>></h2>
+            <table border="1px" cellspacing="10">
+                <thead>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email id</th>
+                    <th>Address</th>
+                    <th>Password</th>
+                </thead>
+                {% for u in ulist %}
+                <tr>
+                    <td>{{ u[0] }}</td>
+                    <td>{{ u[1] }}</td>
+                    <td>{{ u[2] }}</td>
+                    <td>{{ u[3] }}</td>
+                    <td>{{ u[4] }}</td>
+                    {% if 'admin' in session %}
+                    <td><a href="/updateuser/{{ u[0] }}">Edit</a></td>
+                    <td><a href="/deleteuser/{{ u[0] }}">Remove</a></td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+            </table>
+        </fieldset>
+    </div>
+</body>
+</html>

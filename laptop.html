@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+        body {
+            background-color: #8F63ED;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        div.product{
+            background-color: #B299EA;
+
+        }
+        p{
+            color: white;
+        }
+        h1 {
+            color: #333;
+        }
+
+        .product {
+            text-align: left;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .product img {
+            max-width: 200px;
+            max-height: 200px;
+        }
+
+        .description {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function toggleDescription(productId) {
+            var description = document.getElementById(productId);
+            if (description.style.display === "block") {
+                description.style.display = "none";
+            } else {
+                description.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1> Laptops</h1>
+
+    <div class="product" onclick="toggleDescription('product1-description')">
+        <img src="https://m.media-amazon.com/images/I/71EPbW78f0L._SL1500_.jpg" alt="Product 1">
+        <img src="https://m.media-amazon.com/images/I/81WybR3SYVL._SX679_.jpg" alt="Product 1">
+        <img src="https://m.media-amazon.com/images/I/717vm7tI3QL._SX679_.jpg" alt="Product 1">
+        <img src="https://m.media-amazon.com/images/I/81CvEfsdJwL._SX679_.jpg" alt="Product 1">
+        <img src="https://m.media-amazon.com/images/I/81k6dTbQ6oL._SX679_.jpg" alt="Product 1">
+        <img src="https://m.media-amazon.com/images/I/81mKe4b9RiL._SX679_.jpg" alt="Product 1">
+
+        <h2>HP Pavilion x360 2-in-1 Laptop 13th Gen Intel Core i5-1335U</h2>
+        <p>Price:- ₹ 79999</p>
+        <div id="product1-description" class="description">
+            <p><strong>About this item:-</strong></p>
+            <ul>
+                <li>12th Gen Intel Core i5</li>
+                <li>8GB RAM, 512GB SSD</li>
+                <li>14-inch FHD Multitouc</li>
+            </ul>
+            <button class="cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product" onclick="toggleDescription('product2-description')">
+        <img src="https://m.media-amazon.com/images/I/61t5-ZvVicL._SL1500_.jpg" alt="Product 2">
+        <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1715939472/Croma%20Assets/Computers%20Peripherals/Laptop/Images/301738_10_yaahyu.png?tr=w-360" alt="Product 1">
+        <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1715939488/Croma%20Assets/Computers%20Peripherals/Laptop/Images/301738_16_wpzbwu.png?tr=w-360" alt="Product 1">
+        <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1715939485/Croma%20Assets/Computers%20Peripherals/Laptop/Images/301738_14_qrdb0r.png?tr=w-360" alt="Product 1">
+        <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1715939475/Croma%20Assets/Computers%20Peripherals/Laptop/Images/301738_11_uma9mw.png?tr=w-360" alt="Product 1">
+        <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1715939478/Croma%20Assets/Computers%20Peripherals/Laptop/Images/301738_13_yfsq3g.png?tr=w-360" alt="Product 1">
+        
+        <h2>ASUS Vivobook S Flip AMD Ryzen 7 2-in-1 Laptop (16GB, 1TB SSD, Windows 11 Home, 14 inch FHD Display, MS Office 2021, Cool Silver, 1.5 KG)</h2>
+        <p>Price: ₹ 66000</p>
+        <div id="product2-description" class="description">
+            <p><strong>About this item:-</strong></p>
+            <ul>
+                <li>AMD Ryzen 5 5600H</li>
+                <li>16GB RAM, 512GB SSD</li>
+                <li>14-inch Touchscreen</li>
+
+
+            </ul>
+            <button class="cart">Add to Cart</button>
+            
+        </div>
+    </div>
+
+    <div class="product" onclick="toggleDescription('product3-description')">
+        <img src="https://m.media-amazon.com/images/I/81JFWbGkeEL._SL1500_.jpg" alt="Product 3">
+        <img src="https://m.media-amazon.com/images/I/71-6roO29AL._SX679_.jpg" alt="Product 1">
+        <img src="https://m.media-amazon.com/images/I/913iRx-3W-L._SX679_.jpg" alt="Product 1">
+        <img src="https://m.media-amazon.com/images/I/71z-1j187cL._SX679_.jpg" alt="Product 1">
+        <img src="https://m.media-amazon.com/images/I/61uNK7su24L._SX679_.jpg" alt="Product 1">
+        <img src="https://m.media-amazon.com/images/I/61ChHwbxObL._SX679_.jpg" alt="Product 1">
+        <h2>Apple MacBook Air Laptop M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey</h2>
+        <p>Price: ₹ 99000</p>
+        <div id="product3-description" class="description">
+            <p><strong>About this item :-</strong></p>
+            <ul>
+                <li>Apple M1 chip</li>
+                <li>8GB RAM, 256GB SSD</li>
+                <li>13.3-inch Retina Display</li>
+
+            </ul>
+            <button class="cart">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

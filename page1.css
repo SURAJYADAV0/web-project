@@ -1,0 +1,38 @@
+body{
+	background-image: url("https://i.pinimg.com/564x/e7/43/4a/e7434a3a018a1d226dd2438b78cb5c33.jpg");
+	color: white;
+}
+
+div{
+	background:;
+	border-color:yellow;
+	border-style:solid;
+	border-width:2px;
+}
+h3{
+	color: yellow;
+}
+
+h2{
+	color: black;
+}
+
+input[type="reset"],
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+ input[type="reset"] {
+            background-color: #ccc;
+            margin-right: 10px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
